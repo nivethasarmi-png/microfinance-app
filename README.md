@@ -1,16 +1,70 @@
-# React + Vite
+# Microfinance Group Loan Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+The Microfinance Group Loan Management System is a frontend-only web application built using React.  
+It supports microfinance institutions in managing group-based micro-loans by enabling group creation, loan applications, approvals, repayments, and reporting.
 
-Currently, two official plugins are available:
+This project focuses on implementing all functional requirements at the UI level without backend or database integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Functional Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Group & Member Management
+- Create borrower groups
+- Add and view members within a group
 
-## Expanding the ESLint configuration
+### 2. Group Loan Application & Approval
+- Apply for group loans
+- Approve or reject loan applications
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Loan Disbursement Management
+- Disburse approved loans to groups
+- Display individual member allocation (frontend simulation)
+
+### 4. Repayment Schedule Management
+- Generate group-level repayment installments
+- Display installment amount and schedule
+
+### 5. Repayment Tracking
+- Track repayments at group level
+- Record flexible individual member contributions
+
+### 6. Outstanding Balance Tracking
+- Calculate remaining loan balance
+- Highlight overdue or pending repayments
+
+### 7. Compliance Monitoring
+- Identify overdue loans
+- Display repayment status clearly
+
+### 8. Reporting
+- Display summary reports such as total groups and approved loans
+
+---
+
+## Technologies Used
+- React (with Hooks)
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- GitHub Desktop (for version control)
+
+---
+
+## Project Scope
+- Frontend-only implementation
+- No backend or database
+- State-based data handling using React `useState`
+- Designed to match academic project requirements
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+2. Navigate to the project folder
+3. Install dependencies:
+   ```bash
+   npm install
