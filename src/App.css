@@ -1,42 +1,149 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ===== Page ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #020617;
+  color: #e5e7eb;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 260px;
+  background: #020617;
+  border-right: 1px solid #1e293b;
+  padding: 40px 25px;   /* MORE PADDING */
 }
 
-.card {
-  padding: 2em;
+.sidebar h2 {
+  color: #f3f5f5;
+  margin-bottom: 40px; /* MORE SPACE */
+  font-size: 26px;
 }
 
-.read-the-docs {
-  color: #888;
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px; /* SPACE BETWEEN BUTTONS */
+  padding: 14px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sidebar button:hover {
+  background: #1e293b;
+}
+
+/* ===== Main Content ===== */
+.content {
+  flex: 1;
+  padding: 50px;       /* MORE SPACE AROUND CONTENT */
+}
+
+/* ===== Main Title ===== */
+h1 {
+  font-size: 38px;
+  margin-bottom: 45px; /* MORE SPACE */
+  color: #141414;
+}
+
+/* ===== Section Cards ===== */
+section {
+  background: #0f172a;
+  padding: 40px;       /* BIGGER PADDING INSIDE */
+  border-radius: 14px;
+  margin-bottom: 50px; /* BIG GAP BETWEEN SECTIONS */
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* ===== Headings ===== */
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px; /* SPACE BELOW HEADING */
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 35px;    /* SPACE ABOVE */
+  margin-bottom: 20px;
+}
+
+/* ===== Inputs ===== */
+input,
+select {
+  width: 320px;
+  padding: 14px;
+  margin-right: 18px;
+  margin-bottom: 25px; /* SPACE BELOW EACH INPUT */
+  background: #020617;
+  border: 1px solid #334155;
+  color: rgb(250, 249, 249);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 14px 26px;
+  margin-bottom: 25px; /* SPACE BELOW BUTTON */
+  background: #779ef4;
+  border: none;
+  border-radius: 8px;
+  color: rgb(245, 242, 242);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.danger {
+  background: #dc2626;
+  margin-left: 15px;
+}
+
+/* ===== Lists ===== */
+ul {
+  padding-left: 30px;
+  margin-top: 25px;    /* SPACE ABOVE LIST */
+}
+
+li {
+  margin-bottom: 14px; /* SPACE BETWEEN ITEMS */
+  font-size: 17px;
+}
+
+/* Group name link */
+.link {
+  background: none;
+  border: none;
+  color: #fdfefe;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Paragraphs ===== */
+p {
+  font-size: 18px;
+  margin: 18px 0;      /* SPACE BETWEEN LINES */
 }
